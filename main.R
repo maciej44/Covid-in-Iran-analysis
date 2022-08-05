@@ -148,7 +148,7 @@ features = data.frame(
 View(features)
 
 
-# Tutaj mozna zaobserwowac zmiennosc danych, warto dodac, ze liczba testow codziennie mocno sie wahala
+# The variability of the data can be seen here. It is worth adding that the number of tests fluctuated strongly every day.
 features %>%
   ggplot(x = category, y = mean) +
   geom_errorbar(aes(x = category, ymin = mean - standard_deviation, ymax = mean + standard_deviation), width = 0.25) +
